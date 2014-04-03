@@ -104,6 +104,7 @@ void Battle_place::battle(){
 	cin.get();
 	place = rand()%5+1;		//大魔王の攻撃位置
 	attack = rand()%100+1;	//大魔王の攻撃量
+	bu.attack(attack);
 	if(ferret_place == place){
 		ferret.enemy_attack(attack * 2);	//攻撃される。
 	}else{
